@@ -14,7 +14,7 @@ export function Home({ setCurrentPage }: HomeProps) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const officialBannerUrl = "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1000";
+  const officialBannerUrl = "/src/assets/images/regenerated_image_1790318619812.jpg";
 
   return (
     <div className="space-y-16 md:space-y-24 pb-16">

@@ -54,7 +54,7 @@ export const NGO_INFO = {
   establishedUnder: "Registered under Indian Trust Act 1882",
   founder: "Shri Govind Mohan (Govind Mishra)",
   founderRole: "Founder & Social Activist (Practitioner Tax Consultant)",
-  founderImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600",
+  founderImage: "/src/assets/images/regenerated_image_1790317131174.png",
   phones: ["+91 7004451493", "+91 8969581492", "+91 7004299042"],
   emails: ["worldhelpfoundationdhanbad@gmail.com", "aashuhmaprasad101@yahoo.in"],
   upiId: "worldhelpfoundation@sbi / sbi.qr@sbi",
@@ -131,7 +131,7 @@ export const INITIATIVES: InitiativeItem[] = [
     description: "Reaching elderly citizens, women, and children in rural Dhanbad with warm woolen blankets and winter attire.",
     location: "Bhembad & Surrounding Villages, Jharkhand",
     impact: "500+ families provided with winter protection",
-    image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb9?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790318298277.png",
     category: "Community Support"
   },
   {
@@ -149,7 +149,7 @@ export const INITIATIVES: InitiativeItem[] = [
     description: "Free health screening, blood pressure monitoring, doctor consultations, and free medicines for rural communities.",
     location: "Hanuman Vatika & Rural Camps",
     impact: "400+ villagers examined and treated",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790318296225.jpg",
     category: "Health Care"
   },
   {
@@ -158,7 +158,7 @@ export const INITIATIVES: InitiativeItem[] = [
     description: "Providing monthly ration kits consisting of rice, pulses, cooking oil, and nutrition to daily-wage laborer families.",
     location: "Bhembad, Jharkhand",
     impact: "250+ households supported",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790318294684.jpg",
     category: "Essential Assistance"
   }
 ];
@@ -202,84 +202,84 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-2",
     title: "Winter Blanket & Warm Clothing Distribution Camp in Dhanbad",
     category: "Support Activities",
-    image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb9?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317510247.jpg",
     date: "January 2026"
   },
   {
     id: "gal-3",
     title: "Founder Shri Govind Mohan Distributing Blankets at Community Center",
     category: "Community",
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317500686.jpg",
     date: "January 2026"
   },
   {
     id: "gal-4",
     title: "Underprivileged Children Receiving School Kits & Books",
     category: "Education",
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317508078.jpg",
     date: "February 2026"
   },
   {
     id: "gal-5",
     title: "Classroom Study Session with Students on Mats",
     category: "Education",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317504151.jpg",
     date: "February 2026"
   },
   {
     id: "gal-6",
     title: "Founder Interacting and Distributing Aid Packs to Children",
     category: "Children",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317502370.jpg",
     date: "March 2026"
   },
   {
     id: "gal-7",
     title: "Volunteer Team with Community Women & Families",
     category: "Volunteers",
-    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317683712.jpg",
     date: "March 2026"
   },
   {
     id: "gal-8",
     title: "Heartwarming Beneficiary Moments in Rural Jharkhand",
     category: "Community",
-    image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317893354.jpg",
     date: "April 2026"
   },
   {
     id: "gal-9",
     title: "Rural Health & Medical Awareness Camp",
     category: "Support Activities",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317895197.jpg",
     date: "May 2026"
   },
   {
     id: "gal-10",
     title: "Ration Kit & Essential Food Distribution",
     category: "Support Activities",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317897531.jpg",
     date: "June 2026"
   },
   {
     id: "gal-11",
     title: "Youth Volunteer Meeting & Community Planning at Hanuman Vatika",
     category: "Volunteers",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317899701.jpg",
     date: "July 2026"
   },
   {
     id: "gal-12",
     title: "Smile and Joy on Children's Faces During Notebook Distribution",
     category: "Children",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317901657.jpg",
     date: "August 2026"
   },
   {
     id: "gal-13",
     title: "Village Cleanliness & Environmental Sanitation Drive",
     category: "Community",
-    image: "https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/images/regenerated_image_1790317903235.jpg",
     date: "September 2026"
   }
 ];

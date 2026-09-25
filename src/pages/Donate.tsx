@@ -6,6 +6,7 @@ export function Donate() {
   const [selectedAmount, setSelectedAmount] = useState<number | 'custom'>(1000);
   const [customAmount, setCustomAmount] = useState('');
   const [copied, setCopied] = useState(false);
+  const [qrImage, setQrImage] = useState<string>('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=400');
 
   const amounts = [500, 1000, 2500, 5000];
 
@@ -13,6 +14,17 @@ export function Donate() {
     navigator.clipboard.writeText(NGO_INFO.upiId);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setQrImage(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   return (
@@ -101,14 +113,21 @@ export function Donate() {
                 <QrCode className="w-4 h-4" /> Direct UPI / QR Code
               </div>
 
-              <div className="bg-stone-100 p-6 rounded-2xl border border-stone-200 max-w-[220px] mx-auto flex flex-col items-center justify-center">
-                {/* QR Code Placeholder Image */}
-                <div className="w-40 h-40 bg-white rounded-xl shadow-md p-2 flex items-center justify-center border border-stone-300 relative">
-                  <div className="absolute inset-2 border-2 border-dashed border-stone-400 rounded-lg flex flex-col items-center justify-center text-center p-2">
-                    <span className="text-xs font-bold text-stone-800">SBI Payments QR</span>
-                    <span className="text-[10px] text-stone-500 mt-1">{NGO_INFO.name}</span>
-                    <span className="text-[9px] text-blue-700 font-semibold mt-1">BHIM • GPay • Paytm • Yono</span>
+              <div className="bg-stone-100 p-6 rounded-2xl border border-stone-200 max-w-[250px] mx-auto flex flex-col items-center justify-center space-y-3">
+                {/* Dedicated QR Code Image Space */}
+                <div className="w-44 h-44 bg-white rounded-xl shadow-md p-2 flex items-center justify-center border-2 border-dashed border-amber-400 relative group overflow-hidden">
+                  <img src={qrImage} alt="Donation QR Code" className="w-full h-full object-cover rounded-lg" />
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center p-2 text-center text-white">
+                    <span className="text-xs font-bold mb-1">Update QR Image</span>
+                    <label className="cursor-pointer px-3 py-1.5 bg-amber-500 hover:bg-amber-600 rounded-lg text-xs font-bold shadow transition">
+                      Choose File
+                      <input type="file" accept="image/*" onChange={handleImageUpload} className="hidden" />
+                    </label>
                   </div>
+                </div>
+                <div className="text-center">
+                  <span className="text-xs font-bold text-stone-800 block">SBI Payments QR</span>
+                  <span className="text-[10px] text-stone-500">Hover/Click image to upload custom QR code</span>
                 </div>
               </div>
 
