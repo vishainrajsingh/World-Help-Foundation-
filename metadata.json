@@ -1,0 +1,8 @@
+{
+  "name": "World Help Foundation - NGO Website",
+  "description": "Official website of World Help Foundation, Dhanbad, Jharkhand, supporting underprivileged children and vulnerable communities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
